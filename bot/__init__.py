@@ -3,12 +3,12 @@ import asyncio
 from pyrogram import Client
 from dotenv import load_dotenv
 
-api_id = int(os.environ.get("7931165"))
-api_hash = os.environ.get("5a2e46d1e6deb1456c75aa743bc8e0e6")
-bot_token = os.environ.get("5159774583:AAHaIX-f9DmCZWsbAH8X-j6B17BCpM8K6hI")
+api_id = int(os.environ.get("8978848"))
+api_hash = os.environ.get("24ce3cff2d32cf529df1c0018e28d6cf")
+bot_token = os.environ.get("5562438875:AAHKfFy6PdRkrEBqlt6w2mqghtlOKB19kSo")
 download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
-sudo_users = list(set(int(x) for x in os.environ.get("-1001749500356").split()))
-ffmpeg = os.environ.get("FFMPEG", "")
+sudo_users = list(set(int(x) for x in os.environ.get("-1001816242004").split()))
+ffmpeg = os.environ.get("FFMPEG", "ffmpeg -i '''{}''' -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? '''{}''' -y")
 
 app = Client("nirusakibot", api_id=api_id, api_hash=api_hash, bot_token=bot_token, workers=2)
 
