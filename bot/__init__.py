@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import Client
 from dotenv import load_dotenv
 
-api_id = int(os.environ.get("8978848"))
+api_id = os.environ.get("8978848")
 api_hash = os.environ.get("24ce3cff2d32cf529df1c0018e28d6cf")
 bot_token = os.environ.get("5562438875:AAHKfFy6PdRkrEBqlt6w2mqghtlOKB19kSo")
 download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
